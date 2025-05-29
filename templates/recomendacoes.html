@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recomendações</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="map" style="height: 500px;"></div>
+
+    <script>
+        const mapa = L.map('map').setView([-15.78, -47.93], 12);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(mapa);
+
+        const locais = {{ recomendacoes | tojson | safe }};
+
+        locais.forEach(local => {
+            L.marker([local.latitude, local.longitude])
+                .addTo(mapa)
+                .bindPopup(`<b>${local.nome}</b><br>${local.descricao}`);
+        });
+    </script>
+</body>
+</html>

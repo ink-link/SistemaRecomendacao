@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<h2>Login</h2>
+<form method="POST">
+    <label for="email">Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" required>
+
+    <button type="submit">Entrar</button>
+</form>
+<p>Não tem uma conta? <a href="{{ url_for('cadastrar_user') }}">Registre-se</a></p>

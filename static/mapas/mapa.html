@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b059eea029bb0f1451b640eca30785e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b059eea029bb0f1451b640eca30785e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b059eea029bb0f1451b640eca30785e = L.map(
+                "map_6b059eea029bb0f1451b640eca30785e",
+                {
+                    center: [-15.8, -47.9],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c2c3a0619a624957d81729b091f37e4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8c2c3a0619a624957d81729b091f37e4.addTo(map_6b059eea029bb0f1451b640eca30785e);
+        
+    
+            var marker_c9d4538bd225016da5c5b8ceadb8e1fa = L.marker(
+                [-15.7942, -47.8822],
+                {
+}
+            ).addTo(map_6b059eea029bb0f1451b640eca30785e);
+        
+    
+            var icon_30815dc2f8c8d065a2e1075d485c8517 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4009fd1f6ecd0198dffc47c51bc19351 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4251535287b39b19003f2ceab916795a = $(`<div id="html_4251535287b39b19003f2ceab916795a" style="width: 100.0%; height: 100.0%;"><strong>João Silva</strong><br>Produtos: Frutas e Verduras</div>`)[0];
+                popup_4009fd1f6ecd0198dffc47c51bc19351.setContent(html_4251535287b39b19003f2ceab916795a);
+            
+        
+
+        marker_c9d4538bd225016da5c5b8ceadb8e1fa.bindPopup(popup_4009fd1f6ecd0198dffc47c51bc19351)
+        ;
+
+        
+    
+    
+                marker_c9d4538bd225016da5c5b8ceadb8e1fa.setIcon(icon_30815dc2f8c8d065a2e1075d485c8517);
+            
+    
+            var marker_cf84af6cdf4ca76599186c4bc5cd5917 = L.marker(
+                [-15.808, -47.875],
+                {
+}
+            ).addTo(map_6b059eea029bb0f1451b640eca30785e);
+        
+    
+            var icon_4b5070333718825b0e863a0a3a322b80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dac4f6eb0e37d865bca3d2ebeceb5fa1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc3fb8257a513642252e0dad55dfad83 = $(`<div id="html_bc3fb8257a513642252e0dad55dfad83" style="width: 100.0%; height: 100.0%;"><strong>Maria Oliveira</strong><br>Produtos: Queijos e Leite</div>`)[0];
+                popup_dac4f6eb0e37d865bca3d2ebeceb5fa1.setContent(html_bc3fb8257a513642252e0dad55dfad83);
+            
+        
+
+        marker_cf84af6cdf4ca76599186c4bc5cd5917.bindPopup(popup_dac4f6eb0e37d865bca3d2ebeceb5fa1)
+        ;
+
+        
+    
+    
+                marker_cf84af6cdf4ca76599186c4bc5cd5917.setIcon(icon_4b5070333718825b0e863a0a3a322b80);
+            
+    
+            var marker_9593e5ac6dc19ac479c56d6536cdd306 = L.marker(
+                [-15.8105, -47.8901],
+                {
+}
+            ).addTo(map_6b059eea029bb0f1451b640eca30785e);
+        
+    
+            var icon_826e9082b1e6cd2220aa60ef19e5647f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ce79c77e8d5384e9c375fe11fa1e799 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e054c6acadd5ad699e22669f1c52bf0f = $(`<div id="html_e054c6acadd5ad699e22669f1c52bf0f" style="width: 100.0%; height: 100.0%;"><strong>Carlos Souza</strong><br>Produtos: Mel e Derivados</div>`)[0];
+                popup_9ce79c77e8d5384e9c375fe11fa1e799.setContent(html_e054c6acadd5ad699e22669f1c52bf0f);
+            
+        
+
+        marker_9593e5ac6dc19ac479c56d6536cdd306.bindPopup(popup_9ce79c77e8d5384e9c375fe11fa1e799)
+        ;
+
+        
+    
+    
+                marker_9593e5ac6dc19ac479c56d6536cdd306.setIcon(icon_826e9082b1e6cd2220aa60ef19e5647f);
+            
+</script>
+</html>
